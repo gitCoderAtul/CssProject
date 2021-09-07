@@ -1,0 +1,24 @@
+.row{
+    //max-width:114rem;
+    max-width: $grid-width;
+    margin: 0 auto;
+    background-color: $color-gray-light;
+    
+
+    //except last child 
+    //row:last-child
+    &:not(:last-child){
+        margin-bottom: $gutter-vertical; // margin bottom except last child
+    }
+    .col-1-of-2{
+        width: calc((100% - #{$gutter-hotizontal}) /2);
+        background-color: orangered;
+        float: left;
+
+        &:not(:last-child){
+            margin-right: $gutter-hotizontal;
+        }
+    }   
+}
+
+//.row:last-child() it means that select last child

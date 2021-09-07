@@ -1,0 +1,22 @@
+*, *::after,*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+html{
+    /* 10px = 1rem */
+    font-size: 10px;
+    /* root font size is 16px that is 100% 
+    so 10px/16px = 0.625 it means that in percentage 0.625*100 = 62.5%
+    0.625*16=10*/
+}
+
+body{
+    font-weight: 400;
+    /* font-size: 16px; */
+    line-height: 1.7;
+    color: $color-gray-dark;
+    padding: 3rem;
+    font-family: 'Lato', sans-serif;
+    box-sizing: border-box;
+}
